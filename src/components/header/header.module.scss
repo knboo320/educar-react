@@ -1,0 +1,31 @@
+header {
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(91, 81, 222, 0.2), #fff);
+    padding: 0 4rem 0 4rem;
+
+    .header_center {
+        display: flex;
+        gap: 30px;
+
+        #routing_url {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: #000;
+            font-weight: 500;
+        }
+    }
+
+    .header_end {
+
+        #login_url {
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #5B51DE;
+        }
+    }
+}
