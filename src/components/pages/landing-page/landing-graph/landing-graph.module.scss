@@ -1,0 +1,53 @@
+@use '../../../../variables' as v;
+
+.lg_body {
+    @include v.main_body;
+
+    .lg_left {
+        height: 75vh;
+
+        .lg_left_texts {
+            position: relative;
+            height: fit-content;
+
+            img {
+                position: absolute;
+                z-index: -1;
+                right: 140px;
+                transform: translate(0, 0);
+            }
+
+            h1 {
+                @include v.purple_title;
+            }
+
+            h2 {
+                @include v.gray_text;
+            }
+        }
+    }
+
+    .lg_right {
+
+        .lg_right_texts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5rem;
+
+            #lg_r_t_left {
+                @include v.gray_text;
+                width: 20.6rem;
+            }
+
+            #lg_r_t_right {
+                @include v.purple_title;
+                text-align: end;
+
+                #faCalendarCheck {
+                    color: v.$text_gray;
+                }
+            }
+        }
+    }
+}

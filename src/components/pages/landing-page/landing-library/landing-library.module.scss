@@ -1,0 +1,141 @@
+@use '../../../../variables' as v;
+
+.ll_body {
+    @include v.main_body;
+    gap: 8.8rem;
+
+    .ll_left {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+
+        #bgDots {
+            position: absolute;
+            z-index: -1;
+            top: 400px;
+            right: 800px;
+        }
+
+        h1 {
+            @include v.purple_title;
+        }
+
+        h2 {
+            @include v.gray_text;
+        }
+
+        .reading_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.2rem;
+            border-bottom: 2px solid v.$text_gray;
+            padding-bottom: 20px;
+            border-bottom-style: dotted;
+
+            #read_btn {
+                width: 17.3rem;
+                height: 5rem;
+                border: none;
+                background-color: v.$red_text;
+                color: #fff;
+                font-size: 1.8rem;
+                border-radius: 10px;
+                font-weight: 600;
+                transition: transform .2s;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+
+            #faFileLines {
+                color: v.$title_purple;
+                font-size: 45px;
+            }
+        }
+
+        #common_text {
+            font-size: 1.6rem;
+            color: v.$text_gray;
+        }
+    }
+
+    .ll_right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        #bgDots {
+            position: absolute;
+            z-index: -1;
+            top: -80px;
+            right: -70px;
+            transform: translate(0, 0);
+        }
+
+        .ll_card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.35);
+            border-radius: 20px;
+            padding: 10px;
+            background-color: white;
+            position: relative;
+            z-index: 1;
+
+            .ll_card_top {
+                position: relative;
+                background-color: v.$title_purple;
+                padding: 2rem 4rem 0 4rem;
+                border-radius: 20px 20px 0 0;
+
+                #bg_sphere {
+                    background-color: #8881e6;
+                    width: 282px;
+                    height: 282px;
+                    border-radius: 50%;
+                    margin-bottom: 62px;
+                }
+
+                img {
+                    top: 70px;
+                    left: 40px;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+
+            .ll_card_bottom {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 2rem;
+                gap: 12px;
+
+                h4 {
+                    font-size: 3rem;
+                    color: #000;
+                    font-weight: 500;
+                }
+
+                ul {
+                    font-size: 1.6rem;
+                    color: v.$text_gray;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+.end_border {
+    @include v.end_border;
+}

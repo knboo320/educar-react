@@ -1,0 +1,30 @@
+@mixin end_border {
+    margin: auto;
+    margin-top: 10rem;
+    border-bottom: 2px solid $text_gray;
+    border-bottom-style: dotted;
+    width: 60vw;
+}
+
+@mixin purple_title {
+    font-size: 5rem;
+    font-weight: 400;
+    color: $title_purple;
+}
+
+@mixin gray_text {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $text_gray;
+}
+
+@mixin main_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+$red_text: #FF0202;
+$title_purple: #5B51DE;
+$text_gray: rgb(100, 100, 100);
