@@ -1,12 +1,13 @@
 import s from './header.module.scss'
 import logo from '../../assets/educar_logo.png'
+import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ showLoginButton }) {
 
     return(
         <header>
             <div className='header-start'>
-                <img src={logo}/>
+                <Link to={'/educar-react/'}><img src={logo} id={s.educar_logo}/></Link>
             </div>
             <div className={s.header_center}>
                 <a href="#" id={s.routing_url}><i>Professores</i></a>
@@ -16,7 +17,9 @@ function Header() {
                 <a href="#" id={s.routing_url}><i>Fórum</i></a>
             </div>
             <div className={s.header_end}>
-                <a href="#" id={s.login_url}><i>Entrar</i></a>
+            {showLoginButton && (
+                    <Link to={'/educar-react/login'} id={s.lpurple} className={s.login_url}><i>Entrar</i></Link>
+                )}
             </div>
         </header>
     );

@@ -1,19 +1,18 @@
 import './App.scss'
-import LandingEducar from './components/pages/landing-page/landing-educar/LandingEducar.jsx'
-import LandingGraph from './components/pages/landing-page/landing-graph/LandingGraph.jsx'
-import LandingLibrary from './components/pages/landing-page/landing-library/LandingLibrary.jsx'
-import LandingStudent from './components/pages/landing-page/landing_student/LandingStudent.jsx'
+import LandingPage from './components/pages/landing-page/LandingPage.jsx'
+import Login from './components/pages/login/Login.jsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
 
   return (
-    <>
-      <LandingEducar />
-      <LandingLibrary />
-      <LandingGraph />
-      <LandingStudent />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path='/educar-react/' element={<LandingPage />} />
+        <Route path='/educar-react/login' element={<Login />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

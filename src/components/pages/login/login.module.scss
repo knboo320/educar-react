@@ -1,0 +1,77 @@
+@use '../../../variables' as v;
+
+.login_body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30rem 0 30rem;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 20rem);
+
+    .login_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        #diskette_icon {
+            position: relative;
+            animation: randomRotate 30s infinite linear;
+        }
+
+        #bg_login {
+            position: absolute;
+            z-index: -1;
+            top: 80px;
+            right: end;
+            height: calc(100vh - 80px);
+        }
+    }
+
+    .login_right {
+        display: flex;
+        flex-direction: column;
+        
+        .l_r_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 25px;
+
+            #l_r_title {
+                @include v.purple_title;
+                font-size: 6rem;
+                font-weight: 700;
+            }
+
+            #l_r_text {
+                @include v.gray_text;
+                text-align: center;
+            }
+
+            #login_input {
+                width: 47rem;
+                height: 5.5rem;
+                padding: 20px;
+                font-size: 1.6rem;
+                border-radius: 10px;
+                border: 1px solid v.$text_gray;
+            }
+
+            #login_submit {
+                @include v.red_button;
+                & {font-weight: 600;}
+            }
+        }
+    }
+}
+
+@keyframes randomRotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
