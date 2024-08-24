@@ -6,7 +6,7 @@ const CardJourney = ({ imageUrl, title, description }) => {
             <img src={imageUrl} alt={title} />
             <div className={s.card_text}>
                 <h2>{title}</h2>
-                <p>{description}<span>Ver mais...</span></p>
+                <p>{description}<br /><br /> <span>Ver mais...</span></p>
             </div>
         </div>
     );
