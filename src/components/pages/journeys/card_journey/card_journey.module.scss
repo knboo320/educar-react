@@ -1,0 +1,32 @@
+.card_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 44rem;
+    height: 47.2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+
+    img {
+        width: 440px;
+        min-height: 240px;
+        border-radius: 20px;
+    }
+
+    .card_text {
+        padding: 28px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}

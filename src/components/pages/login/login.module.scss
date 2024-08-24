@@ -59,9 +59,9 @@
                 border: 1px solid v.$text_gray;
             }
 
-            #login_submit {
+            .login_submit {
                 @include v.red_button;
-                & {font-weight: 600;}
+                & {font-weight: 600; text-decoration: none;}
             }
         }
     }

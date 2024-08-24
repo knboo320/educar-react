@@ -39,6 +39,7 @@
 
         .login_btn {
             @include v.red_button;
+            text-decoration: none   ;
         }
 
         .discord_icon {

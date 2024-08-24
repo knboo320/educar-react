@@ -1,0 +1,15 @@
+.journeys_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 7.5rem 0 7.5rem 0;
+    gap: 5rem;
+
+    .journeys_container {
+        display: flex;
+        align-items: center;
+        gap: 13rem;
+    }
+}

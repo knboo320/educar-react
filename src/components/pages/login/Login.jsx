@@ -19,7 +19,7 @@ function Login() {
                     <h2 id={s.l_r_text}>Escreva suas informações abaixo para entrar em <br />sua conta.</h2>
                     <input type="text" name="usuario" id={s.login_input} placeholder='Usuário'/>
                     <input type="password" name="senha" id={s.login_input} placeholder='Senha'/>
-                    <button type="submit" id={s.login_submit}><Link to={'/educar-react/'} id={s.lwhite}>Entrar</Link></button>
+                    <Link to={'/educar-react/jornadas'} className={s.login_submit} id={s.lwhite}>Entrar</Link>
                 </div>
             </div>
         </main>
