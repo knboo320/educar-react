@@ -1,8 +1,8 @@
 import Header from "../../../header/Header";
 import CardExperience from "../card-experience/CardExperience";
 import s from "./journey-lca.module.scss"
-import xp1 from "../../../../assets/journeys/descobertas_xp1.png"
-import xp2 from "../../../../assets/journeys/descobertas_xp2.png"
+import xp1 from "../../../../assets/journeys/luz_xp1.png"
+import xp2 from "../../../../assets/journeys/luz_xp2.png"
 
 function JourneyLCA() {
 
@@ -18,11 +18,11 @@ function JourneyLCA() {
                 <div className={s.j_lca_experiences}>
                     <CardExperience
                         imageUrl={xp1}
-                        title="Eu e o mundo..."
+                        title="Cineconhecimento"
                     />
                     <CardExperience
                         imageUrl={xp2}
-                        title="Meu futuro é agora!"
+                        title="Desbravando a 7ª arte"
                     />
                 </div>
             </div>
